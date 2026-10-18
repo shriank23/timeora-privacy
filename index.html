@@ -128,23 +128,55 @@
   <div class="card">
     <h2><span class="icon">📋</span> Overview</h2>
     <p>
-      Timeora is a productivity app for focus timers, habit tracking, todos, and goals.
-      This policy explains what data the app accesses, how it is used, and your rights as a user.
+      Timeora is a focus, habit, to-do and goals app. It has no accounts and no internet
+      access, and it collects no personal data. This policy explains what the app keeps on
+      your phone, what Android does with it, and the choices you have.
     </p>
-    <p class="meta">Last updated: April 2026 &nbsp;·&nbsp; Effective from first install</p>
+    <p class="meta">Last updated: October 2026 &nbsp;·&nbsp; Effective from first install</p>
   </div>
 
   <div class="card">
-    <h2><span class="icon">🔒</span> Data We Collect</h2>
+    <h2><span class="icon">🔒</span> Your Data Stays on Your Phone</h2>
     <div class="highlight-box">
       <strong>Timeora collects no personal data and sends nothing to any server.</strong>
-      Everything you enter stays on your device only.
+      The app has no internet permission, so it cannot.
     </div>
     <p>
-      All app data — habits, tasks, goals, focus history, settings, and your name — is stored
-      exclusively in your device's local storage (Android SharedPreferences).
-      It is never transmitted, uploaded, or shared with any third party.
+      Everything you enter — habits, tasks, lists, goals, notes, journal entries, focus
+      history, your name and your settings — is stored only in the app's private storage
+      on your device. Timeora never transmits it, and we never receive it.
     </p>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">☁️</span> Phone Backup</h2>
+    <p>
+      If backup is turned on in your Android settings, Android includes Timeora's data in
+      your phone's encrypted backup to your Google account, and restores it when you set up
+      a new phone. This is Android's own backup service: Timeora cannot see or access that
+      backup, and its diagnostic log is left out of it.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">📤</span> Sharing You Choose</h2>
+    <p>Your data leaves the phone only when you send it yourself:</p>
+    <ul>
+      <li>
+        <strong>Backup file and CSV export</strong> — go wherever you pick in the Android
+        share menu (for example Drive, Gmail or WhatsApp). That app's privacy policy applies.
+      </li>
+      <li>
+        <strong>Copy backup</strong> — puts the backup on the clipboard, where keyboard and
+        clipboard apps can read it.
+      </li>
+      <li>
+        <strong>Restore</strong> — reads only the backup file you pick or paste.
+      </li>
+      <li>
+        <strong>Share an achievement</strong> — sends only the badge text you share.
+      </li>
+    </ul>
   </div>
 
   <div class="card">
@@ -152,24 +184,33 @@
     <p>Timeora requests the following Android permissions:</p>
     <ul>
       <li>
-        <strong>POST_NOTIFICATIONS</strong> — to show focus session alerts and habit reminders
-        on your lock screen and notification shade. You can disable this at any time in
-        Android Settings.
+        <strong>POST_NOTIFICATIONS</strong> — to show habit, task and goal reminders and
+        focus/timer alerts. You can turn this off at any time in Android Settings.
       </li>
       <li>
-        <strong>SCHEDULE_EXACT_ALARM / USE_EXACT_ALARM</strong> — to fire habit and goal
-        reminders at the exact time you set.
+        <strong>SCHEDULE_EXACT_ALARM / USE_EXACT_ALARM</strong> — to fire reminders and timer
+        alarms at the exact time you set.
       </li>
       <li>
-        <strong>VIBRATE</strong> — to provide haptic feedback when a timer ends.
+        <strong>USE_FULL_SCREEN_INTENT</strong> — to show the timer-finished alarm over the
+        lock screen.
       </li>
       <li>
-        <strong>WAKE_LOCK</strong> — to keep the screen on while a focus session is actively
-        running (optional; released as soon as the timer stops or is paused).
+        <strong>RECEIVE_BOOT_COMPLETED</strong> — to restore your reminders after the phone
+        restarts.
       </li>
       <li>
-        <strong>RECEIVE_BOOT_COMPLETED</strong> — to restore scheduled reminders after the
-        device restarts, so your habit and goal notifications still fire on time.
+        <strong>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</strong> — to ask you, only if you
+        agree, to exempt Timeora from battery optimization so reminders are not delayed.
+      </li>
+      <li>
+        <strong>VIBRATE</strong> and <strong>WAKE_LOCK</strong> — for haptic feedback when a
+        timer ends and to keep the screen on during a running session (released when it
+        stops or pauses).
+      </li>
+      <li>
+        <strong>USE_BIOMETRIC / USE_FINGERPRINT</strong> — for the optional app lock. Android
+        checks your fingerprint, face or screen-lock PIN; Timeora never sees them.
       </li>
     </ul>
     <p>
@@ -179,63 +220,67 @@
   </div>
 
   <div class="card">
+    <h2><span class="icon">📱</span> Widget and Spoken Announcements</h2>
+    <p>
+      The home-screen widget shows today's habits and tasks, so anyone who can see your
+      screen can see them. Timer announcements are read aloud by the text-to-speech engine
+      installed on your phone.
+    </p>
+  </div>
+
+  <div class="card">
     <h2><span class="icon">🌐</span> Internet Access</h2>
     <p>
-      Timeora does not connect to the internet at runtime. The app uses
-      <strong>Google Fonts</strong>, which are bundled with the app at build time and
-      loaded entirely offline — no font requests are made to external servers during use.
-    </p>
-    <p>
-      There is no analytics SDK, no crash reporting service, no advertising network,
-      and no remote API of any kind integrated into the app.
+      Timeora has no internet permission and does not connect to the internet. Its fonts
+      are bundled with the app, so nothing is downloaded while you use it.
     </p>
   </div>
 
   <div class="card">
     <h2><span class="icon">👤</span> Third‑Party Services</h2>
     <p>
-      Timeora does <strong>not</strong> use any third‑party service that collects user data,
-      including but not limited to:
+      Timeora does <strong>not</strong> use any third‑party service that collects user data:
     </p>
     <ul>
       <li>No Google Analytics / Firebase</li>
       <li>No Facebook SDK</li>
       <li>No advertising networks (AdMob, etc.)</li>
       <li>No crash reporting (Sentry, Crashlytics, etc.)</li>
-      <li>No cloud sync or backup service</li>
+      <li>No cloud sync service</li>
     </ul>
+    <p>
+      Timeora may ask Google Play to show its in-app rating dialog. Google Play handles your
+      rating under Google's privacy policy; Timeora receives nothing from it.
+    </p>
   </div>
 
   <div class="card">
     <h2><span class="icon">🗑️</span> Data Deletion</h2>
-    <p>
-      All data is stored locally on your device. You can delete it at any time by:
-    </p>
+    <p>You can delete your data at any time:</p>
     <ul>
-      <li>Using the in-app export and then clearing app data in Android Settings</li>
-      <li>Uninstalling Timeora — this permanently removes all app data from your device</li>
+      <li>Clear Timeora's storage in Android Settings, or uninstall Timeora — this
+        permanently removes all app data from your phone</li>
+      <li>Turn off or delete your Android backup to remove the backup copy</li>
     </ul>
     <p>
-      Because no data is ever sent to a server, there is nothing to request deletion of
-      from our end.
+      We hold no copy of your data, so there is nothing to request deletion of from our end.
     </p>
   </div>
 
   <div class="card">
     <h2><span class="icon">👶</span> Children's Privacy</h2>
     <p>
-      Timeora does not knowingly collect any information from anyone, including children
-      under the age of 13. The app contains no accounts, no sign‑in, and no data
-      transmission of any kind.
+      Timeora does not collect any information from anyone, including children under the
+      age of 13. The app has no accounts, no sign‑in, and no data transmission of any kind.
     </p>
   </div>
 
   <div class="card">
     <h2><span class="icon">✏️</span> Changes to This Policy</h2>
     <p>
-      If this privacy policy is updated, the new version will be published at this URL
-      with a revised "Last updated" date. Continued use of the app after any changes
-      constitutes acceptance of the updated policy.
+      If this privacy policy is updated, the new version will be published at this URL and
+      in the app, with a revised "Last updated" date. Continued use of the app after any
+      changes constitutes acceptance of the updated policy.
     </p>
   </div>
 
